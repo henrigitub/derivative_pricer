@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+.DS_Store
+figures/*.png
+data/*.json
+
+# Local working notes
+/cahier_des_charges_*.md
+/consignes_*.md
+/seance_*.md
+/reprise_*.md

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "derivatives-pricing-engine"
+version = "0.1.0"
+description = "European option pricing and numerical risk analysis"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.24", "scipy>=1.10"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+analysis = ["pandas>=2", "matplotlib>=3.7", "jupyter>=1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
